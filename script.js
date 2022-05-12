@@ -97,14 +97,3 @@ hours = (hours % 12) || 12; //get 12 format hours..
             }
     });
 
-    // function ScrollDiv(){
-
-        // if(document.getElementById('chats').scrollTop<(document.getElementById('chats').scrollHeight-document.getElementById('chats').offsetHeight)){-1
-        //       document.getElementById('chats').scrollTop=document.getElementById('chats').scrollTop+1
-        //       }
-        // else {
-        //     document.getElementById('chats').scrollTop=0;
-        //}
-        //}
-     
-    //  setInterval(ScrollDiv,50);
