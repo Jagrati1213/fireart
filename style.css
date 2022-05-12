@@ -73,13 +73,21 @@ section{
     overflow-y: auto;
     padding-bottom: 2rem;
 }
+.msg::-webkit-scrollbar {
+    display: none;
+  }
+  
 .msg .massage{
     width:fit-content;
+    height: fit-content;
     border-radius: 12px;
     text-transform:inherit;
     margin-bottom: 1.2rem;
     word-wrap:normal;
     font-size: 15px;
+}
+.msg .massage p{
+    word-break: break-all;
 }
 .incoming{
     background: var(--white);
