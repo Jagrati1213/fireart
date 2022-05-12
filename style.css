@@ -47,7 +47,7 @@ section{
 .chat-person div{
     background: var(--white);
     border-radius: 29px;
-    padding: .5rem 0;
+    padding: .9rem 0;
 }
 .chat-person div p{
     font-size: 16px;
@@ -58,6 +58,8 @@ section{
 }
 .chat-person div img,.chat-box header img{
     max-width: 10%;
+    cursor: pointer;
+    user-select: none;
 }
 .icon-img{
     max-width: 11px !important;
@@ -83,7 +85,7 @@ section{
     padding: 12px 14px 1px 12px; 
     color: var(--balck);  
 }
-.outcoming{
+.outgoing{
     margin-left: auto;
     background: var(--pink);
     padding: 12px 12px 5px 3rem;
@@ -132,8 +134,13 @@ input[type="submit"]{
 }
 .input-icon{
     max-width:44px !important;
+    cursor: pointer;
 }
-
+#submit_btn{
+    border: none;
+    background: transparent;
+    outline: none;
+}
 
 /* Media queries */
 
@@ -176,7 +183,7 @@ input[type="submit"]{
         font-size: 18px;
         margin-right: 8px;
     }
-    .outcoming, .incoming{
+    .outgoing, .incoming{
         padding: 6px 7px 0px 1rem;
         font-size: 12px !important;
     }
