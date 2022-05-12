@@ -71,6 +71,7 @@ section{
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-y: auto;
+    padding-bottom: 2rem;
 }
 .msg .massage{
     width:fit-content;

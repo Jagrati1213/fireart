@@ -42,6 +42,20 @@ var date = new Date();
 var hours = date.getHours();
 var min = date.getMinutes();
 hours = (hours % 12) || 12; //get 12 format hours..
+
+//    if it's less then 10
+    if(hours<10){
+        hours=`0${hours}`;
+    }
+    else{
+        hours=hours
+    }
+    if(min<10){
+        min=`0${min}`;
+    }
+    else{
+        min=min;
+    }
 console.log(hours,min);    
 
 
