@@ -102,7 +102,7 @@ section{
 }
 .msg .massage .time{
   text-align: right;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   font-size: 10px;
 }
 .chat-box{
