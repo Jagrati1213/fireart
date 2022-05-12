@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --balck:#191b1f;
+    --white:#f5f5f5;
+    --pink:#eba5c7;
+    --red:#c05c30;
+    --green:#30c030;
+    --gray:#999999b5;
+}
 body{
     overflow-x: hidden;
 }
@@ -13,10 +21,10 @@ section{
     padding: 0 !important;
 }
 .chat-info{
-    border-right: 1px solid #999999b5;
+    border-right: 1px solid var(--gray);
 }
 .chat-info header,.chat-box header,.input-box{
-   background-color: #f5f5f5;
+   background-color: var(--white);
    /* padding-top:1rem; */
    /* padding-bottom: 1rem; */
 }
@@ -30,8 +38,14 @@ section{
     padding:3rem;
 
 }
+.pointer{
+    background: var(--green);
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+}
 .chat-person div{
-    background: #f5f5f5;
+    background: var(--white);
     border-radius: 29px;
     padding: .5rem 0;
 }
@@ -56,6 +70,30 @@ section{
     background-repeat: no-repeat;
     overflow-y: auto;
 }
+.msg .massage{
+    width:fit-content;
+    border-radius: 12px;
+    text-transform:inherit;
+    margin-bottom: 1.2rem;
+    word-wrap:normal;
+    font-size: 15px;
+}
+.incoming{
+    background: var(--white);
+    padding: 12px 14px 1px 12px; 
+    color: var(--balck);  
+}
+.outcoming{
+    margin-left: auto;
+    background: var(--pink);
+    padding: 12px 12px 5px 3rem;
+    color: var(--white);
+}
+.msg .massage .time{
+  text-align: right;
+  margin-bottom: 0px;
+  font-size: 10px;
+}
 .chat-box{
     position: relative;
 }
@@ -68,7 +106,7 @@ section{
 }
 input[type="text"]{
     padding: 12px 12px 12px 25px;
-    border:1px solid #99999959;
+    border:1px solid var(--gray);
     outline: none;
     border-radius: 50px;
 }
@@ -99,6 +137,13 @@ input[type="submit"]{
 
 /* Media queries */
 
+/* pc-view */
+@media screen and (max-width:1200px){
+    .chat-person{
+        padding:1rem;
+    }
+}
+/* tablet-view */
 @media screen and (max-width:990px){
     .chat-info{
         display: none;
@@ -109,7 +154,8 @@ input[type="submit"]{
         max-width: 15%;
     }
 }
-@media screen and (max-width:550px){
+/* mobile-view */
+@media screen and (max-width:600px){
     .input-icon {
         max-width: 32px !important;
     }
@@ -129,6 +175,10 @@ input[type="submit"]{
     .chat-box .arrow i{
         font-size: 18px;
         margin-right: 8px;
+    }
+    .outcoming, .incoming{
+        padding: 6px 7px 0px 1rem;
+        font-size: 12px !important;
     }
 }
 @media screen and (max-width:468px){
