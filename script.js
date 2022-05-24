@@ -5,43 +5,45 @@ var chats =document.getElementById("chats");
 var chat_text=
        `<div class="massage incoming">
             <p class="mb-0">hii  </p>
-            <p class="time p-0 ps-5">11:00</p>
+            <p class="time p-0 ps-5">11:00 am</p>
        
     </div>
     <div class="massage incoming">
         <p class="mb-0">Recruiters want to know your current salary</p>
-        <p class="time p-0 ps-5">11:00</p>
+        <p class="time p-0 ps-5">11:00 am</p>
        
     </div>
     <div class="massage incoming">
         <p class="mb-0">This would also help us recommend to you some 
             great opportunities!  </p>
-        <p class="time p-0 ps-5">11:00</p>
+        <p class="time p-0 ps-5">11:00 am</p>
        
     </div>
     <div class="massage incoming">
         <p class="mb-0">is your salary is 7 lakh and 0 thousands</p>
-        <p class="time p-0 ps-5">11:00</p>
+        <p class="time p-0 ps-5">11:00 am</p>
        
     </div>
 
     <!-- outgoing msgs -->
     <div class="massage outgoing">
         <p class="mb-0">Yes My CTC is 7 lakh</p>
-        <p class="time p-0 ps-5">11:30</p>
+        <p class="time p-0 ps-5">11:30 am</p>
        
     </div>
     <div class="massage outgoing">
         <p class="mb-0">Can you find batter opportunities for me
             So that i can learn and earn more.
         </p>
-        <p class="time p-0 ps-5">11:30</p>
+        <p class="time p-0 ps-5">11:30 am</p>
        
         </div>`;
 var date = new Date();
 var hours = date.getHours();
 var min = date.getMinutes();
+let ampm = hours >= 12 ? 'pm' : 'am';
 hours = (hours % 12) || 12; //get 12 format hours..
+
 
 //    if it's less then 10
     if(hours<10){
@@ -67,7 +69,7 @@ hours = (hours % 12) || 12; //get 12 format hours..
     else{
         chat_text=chat_text+`<div class="massage outgoing">
                 <p class="mb-0">${document.getElementById("inpt").value}</p>
-                <p class="time p-0 ps-5">${hours}:${min}</p>
+                <p class="time p-0 ps-5">${hours}:${min} ${ampm}</p>
             
             </div>`; 
    }

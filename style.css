@@ -113,7 +113,7 @@ section{
     margin-left: auto;
     background: var(--pink);
     /* padding: 12px 12px 5px 3rem; */
-    padding: 6px 12px 0px 3rem;
+    padding: 6px 12px 0px 1.2rem;
     color: var(--white);
 }
 .msg .massage .time{
