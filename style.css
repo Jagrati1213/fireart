@@ -31,7 +31,7 @@ section{
    background-color: var(--white);
 }
 .chat-info header,.chat-box header{
-   height:10vh;
+   height:8vh;
 }
 .chat-person{
     height: 40vh;
@@ -60,7 +60,7 @@ section{
     font-size: 11px;
 }
 .chat-person div img,.chat-box header img{
-    max-width: 9%;
+    max-width: 8.5%;
     cursor: pointer;
     user-select: none;
 }
