@@ -60,12 +60,13 @@ section{
     font-size: 11px;
 }
 .chat-person div img,.chat-box header img{
-    max-width: 10%;
+    max-width: 9%;
     cursor: pointer;
     user-select: none;
 }
 .chat-box img:first-child,.chat-person img:first-child{
     max-width: 100%;
+    object-fit: contain;
 }
 .chat-person-img img:first-child{
     max-width: 24%;
@@ -170,9 +171,12 @@ input[type="submit"]{
 /* Media queries */
 
 /* pc-view */
-@media screen and (max-width:1300px){
+@media screen and (max-width:1398px){
     .chat-person{
         padding:1rem;
+    }
+    .chat-box header img {
+        max-width: 11%;
     }
 }
 /* tablet-view */
