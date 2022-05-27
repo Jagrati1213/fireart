@@ -89,9 +89,12 @@ section{
     box-shadow:0 0 2px var(--msg);
 }
 .modal-body div{
-    padding: 3px 0;
+    padding: 4px 0 6px 0;
     border-radius: 12px;
     color: var(--msg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .modal-body div:hover{
     background:var(--msg-hover) ;
