@@ -26,6 +26,9 @@ section{
     outline: none;
     border: none;
 }
+.btn:hover{
+    background: transparent !important;
+}
 .chat-info{
     /* position: relative; */
     border-right: 1px solid var(--border);
@@ -92,6 +95,9 @@ section{
 }
 .modal-body div:hover{
     background:var(--msg-hover) ;
+}
+.modal-body div button:hover{
+    background-color: transparent !important;
 }
 .person-box img,
 .chat-box header img{
