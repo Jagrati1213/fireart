@@ -86,7 +86,6 @@ section{
 }
 .modal-content{
     border-radius: 18px;
-    box-shadow:0 0 2px var(--msg);
 }
 .modal-body div{
     padding: 4px 0 6px 0;
@@ -101,6 +100,47 @@ section{
 }
 .modal-body div button:hover{
     background-color: transparent !important;
+}
+.switch-modal{
+    top: 17%;
+    left: 0%;
+}
+.switch-modal .modal-dialog{
+    max-width: 500px;
+}
+.switch-modal .modal-header{
+    justify-content: center;
+    position: relative;
+    border-bottom: none;
+    height: 8vh;
+}
+.switch-modal .modal-body p,
+.switch-modal .modal-footer p{
+    color:#00000085;
+    margin-top: 2rem;
+}
+.switch-modal .modal-footer a{
+    color: var(--balck);
+}
+
+.img-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(0%,-20%);
+    /* position: absolute; */
+}
+.img-div img{
+    border: 5px solid #fff;
+    border-radius: 50px;
+    width: 20% !important;
+    height: 20% !important;
+    background: white;
 }
 .person-box img,
 .chat-box header img{

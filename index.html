@@ -39,7 +39,7 @@
                 
             <!-- chat-person-details -->
             <div class="chat-person justify-content-evenly align-items-center flex-column d-flex">
-                <!-- person-1 -->
+                <!-- person-1 START-->
                 <div class="person-box col-12 d-flex justify-content-evenly align-items-center">
                     <!-- <span class="pointer"></span>
                         <img src="./images/1.png" alt="sender-img" class="img-fluid">
@@ -58,7 +58,8 @@
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <img src="./images/3.png" alt="msg-icon" class="img-fluid w-50">
                     </button>
-                    <!-- setting-box -->
+
+                    <!-- setting-box STRAT-->
                     <div class="modal modal-1 fade" 
                     id="staticBackdrop" 
                     data-bs-backdrop="static" 
@@ -99,7 +100,7 @@
                                     <span class="">Report Chat</span>
                                 </div>
                                 <hr class="mt-2">
-                                <div class="col-12" data-bs-dismiss="modal">
+                                <div class="col-12" data-bs-toggle="modal" data-bs-target="#switchModal">
                                     <button class="p-0 px-1 btn btn-outline-light d-inline-block">
                                         <img src="./images/ICN5.png" alt="right-icon" class="img-fluid w-50">
                                     </button>
@@ -110,9 +111,37 @@
                         </div>
                         </div>
                     </div>
-                </div>
+                    <!-- setting-box END -->
 
-                 <!-- person-2 -->
+                    <!-- Switch Associate-box START-->
+                    <div class="modal switch-modal fade" id="switchModal" tabindex="-1" aria-labelledby="switchModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- img -->
+                            <div class="img-div">
+                                <img src="./images/IC1.png" class="img-fluid" alt="switch">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="font-size:12px;"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                               <h5>Switch Associate</h5>
+                               <button class="p-0 px-1 btn btn-outline-light d-inline-block">
+                                <img src="./images/ICN5.png" alt="right-icon" class="img-fluid w-50">
+                            </button>
+                            <p class="text-center">you are No.1 in the queue. The estimated wait time is about 20 minutes. Thank you for your patience</p>
+                        </div>
+                        <div class="modal-footer text-center mb-4">
+                            <p>If you do not want to wait, please <a href="#">click here</a> to leave us a message</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                     <!-- Switch Associate-box END -->
+                </div>
+                <!-- person-1 END -->
+
+                 <!-- person-2 START-->
                 <div class="person-box col-12 d-flex justify-content-evenly align-items-center">
                         <!-- <span class="pointer" style="background:var(--red);"></span>
                         <img src="./images/2.png" alt="sender-img" class="img-fluid">
@@ -132,7 +161,7 @@
                     <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="./images/3.png" alt="msg-icon" class="img-fluid w-50">
                     </button>
-                     <!-- settings-Box -->
+                     <!-- settings-Box START -->
                     <div class="modal modal-2 fade" 
                     id="exampleModal" 
                     tabindex="-1" 
@@ -171,7 +200,7 @@
                                     <span class="">Report Chat</span>
                                 </div>
                                 <hr class="mt-2">
-                                <div class="col-12" data-bs-dismiss="modal">
+                                <div class="col-12" data-bs-toggle="modal" data-bs-target="#switchsecondModal">
                                     <button class="p-0 px-1 btn btn-outline-light d-inline-block">
                                         <img src="./images/ICN5.png" alt="right-icon" class="img-fluid w-50">
                                     </button>
@@ -182,8 +211,35 @@
                         </div>
                         </div>
                     </div>
+                     <!-- settings-Box END -->
                 
+                    <!-- Switch Associate-box START-->
+                    <div class="modal switch-modal fade" id="switchsecondModal" tabindex="-1" aria-labelledby="switchsecondModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- img -->
+                                    <div class="img-div">
+                                    <img src="./images/IC1.png" class="img-fluid" alt="switch">
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="font-size:12px;"></button>
+                                    </div>
+                                   <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                                        <h5>Switch Associate</h5>
+                                        <button class="p-0 px-1 btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN5.png" alt="right-icon" class="img-fluid w-50">
+                                        </button>
+                                        <p class="text-center">you are No.1 in the queue. The estimated wait time is about 20 minutes. Thank you for your patience</p>
+                                    </div>
+                                    <div class="modal-footer text-center mb-4">
+                                        <p>If you do not want to wait, please <a href="#">click here</a> to leave us a message</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                     <!-- Switch Associate-box END -->
                 </div>
+                <!-- person-2 END -->
                     
             </div>
                 
