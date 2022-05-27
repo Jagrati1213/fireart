@@ -11,6 +11,8 @@
     --green:#30c030;
     --gray:#999999b5;
     --border:#cccccc;
+    --msg:#585857;
+    --msg-hover:#f5dde867;
 }
 body{
     overflow-x: hidden;
@@ -25,18 +27,23 @@ section{
     border: none;
 }
 .chat-info{
+    /* position: relative; */
     border-right: 1px solid var(--border);
 }
-.chat-info header,.chat-box header,.input-box{
+.chat-info header, 
+.chat-box header,
+.input-box{
    background-color: var(--white);
 }
-.chat-info header,.chat-box header{
+.chat-info header,
+.chat-box header{
    height:8vh;
 }
 .chat-person{
     height: 40vh;
     margin-top: auto;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
+    padding: 0 4rem;
 
 }
 .pointer{
@@ -45,22 +52,49 @@ section{
     border: none;
     border-radius: 50px;
 }
-.chat-person div{
+.chat-person .person-box{
     background: var(--white);
     /* border-radius: 29px; */
     /* padding: .9rem 0; */
     border-radius: 18px;
     height: 11vh;
 }
-.chat-person div p{
+.person-box p{
     font-size: 16px;
     font-weight: 600;
 }
-.chat-person div p span{
+.person-box p span{
     font-size: 11px;
     color: #7b7979;
 }
-.chat-person div img,.chat-box header img{
+.modal-1{
+    width: 61%;
+    height: 70%;
+    margin-left:3rem;
+}
+.modal-2{
+    width: 61%;
+    height: 70%;
+    margin-top: 10rem;
+    margin-left:3rem;
+}
+.modal-dialog{
+ max-width: 300px;
+}
+.modal-content{
+    border-radius: 18px;
+    box-shadow:0 0 2px var(--msg);
+}
+.modal-body div{
+    padding: 3px 0;
+    border-radius: 12px;
+    color: var(--msg);
+}
+.modal-body div:hover{
+    background:var(--msg-hover) ;
+}
+.person-box img,
+.chat-box header img{
     /* max-width: 8.5%; */
     cursor: pointer;
     user-select: none;
@@ -76,7 +110,8 @@ section{
     max-width: 100%;
     object-fit: contain;
 }
-.chat-person-img img:first-child,.chat-box img:first-child{
+.chat-person-img img:first-child,
+.chat-box img:first-child{
     /* max-width: 24%; */
     height: auto !important;
 }
@@ -157,21 +192,19 @@ input[type="text"]{
     border-radius: 50px;
 }
 
-input[type="submit"],input[type="file"]{
+input[type="submit"],
+input[type="file"]{
     border: none;
     outline: none;
+    display: none;
+    visibility: hidden;
 }
 input[type="submit"]{
     border-radius: 0px;
     cursor: pointer;
 }
-input[type="file"],
-input[type="submit"]{
-    display: none;
-    visibility: hidden;
-}
 .input-icon{
-    max-width:44px !important;
+    max-width:46px !important;
     cursor: pointer;
 }
 #submit_btn{
@@ -189,6 +222,9 @@ input[type="submit"]{
     }
     .chat-box header img:first-child {
         /* max-width: 11%; */
+    }
+    .modal-1,.modal-2{
+        margin-left: 7rem;
     }
 }
 /* tablet-view */
