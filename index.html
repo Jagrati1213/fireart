@@ -40,7 +40,7 @@
             <!-- chat-person-details -->
             <div class="chat-person justify-content-evenly align-items-center flex-column d-flex">
                 <!-- person-1 -->
-                <div class="col-12 d-flex justify-content-evenly align-items-center">
+                <div class="person-box col-12 d-flex justify-content-evenly align-items-center">
                     <!-- <span class="pointer"></span>
                         <img src="./images/1.png" alt="sender-img" class="img-fluid">
                         <p class="mb-0">Customer Support <br> 
@@ -55,13 +55,65 @@
                     <p class="mb-0 col-xl-7 col-6">Customer Support <br> 
                         <span>Today <span class="date">01/04/22</span></span>
                     </p>
-                    <button class="btn btn-outline-light">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <img src="./images/3.png" alt="msg-icon" class="img-fluid w-50">
                     </button>
-           
+                    <!-- setting-box -->
+                    <div class="modal modal-1 fade" 
+                    id="staticBackdrop" 
+                    data-bs-backdrop="static" 
+                    data-bs-keyboard="false" 
+                    tabindex="-1" 
+                    aria-labelledby="staticBackdropLabel" 
+                    aria-hidden="true">
+
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body d-flex justify-content-evenly flex-column">
+                            
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN1.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Make as read</span>              
+                                </div>
+
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN2.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Mute Notification</span>
+                                </div>
+                                <hr class="my-2">
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN3.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Delete Chat</span>              
+                                </div>
+
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN4.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Report Chat</span>
+                                </div>
+                                <hr class="mt-2">
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN5.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Switch associate</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
+
                  <!-- person-2 -->
-                <div class="col-12 d-flex justify-content-evenly align-items-center">
+                <div class="person-box col-12 d-flex justify-content-evenly align-items-center">
                         <!-- <span class="pointer" style="background:var(--red);"></span>
                         <img src="./images/2.png" alt="sender-img" class="img-fluid">
                         <p class="mb-0">Customer Support <br> 
@@ -77,10 +129,60 @@
                         <span>Today <span class="date">01/04/22</span></span>
                     </p>
 
-                    <button class="btn btn-outline-light">
+                    <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="./images/3.png" alt="msg-icon" class="img-fluid w-50">
                     </button>
-           
+                     <!-- settings-Box -->
+                    <div class="modal modal-2 fade" 
+                    id="exampleModal" 
+                    tabindex="-1" 
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body d-flex justify-content-evenly flex-column">
+                            
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN1.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Make as read</span>              
+                                </div>
+
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN2.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Mute Notification</span>
+                                </div>
+                                <hr class="my-2">
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN3.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Delete Chat</span>              
+                                </div>
+
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN4.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Report Chat</span>
+                                </div>
+                                <hr class="mt-2">
+                                <div class="col-12" data-bs-dismiss="modal">
+                                    <button class="btn btn-outline-light d-inline-block">
+                                        <img src="./images/ICN5.png" alt="right-icon" class="img-fluid w-50">
+                                    </button>
+                                    <span class="">Switch associate</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                
                 </div>
                     
             </div>
