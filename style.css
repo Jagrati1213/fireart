@@ -13,11 +13,14 @@
     --border:#cccccc;
     --msg:#585857;
     --msg-hover:#f5dde867;
+    --msg-set-pink:#eba5c7;
+    --msg-set-white:#eef0f2;
+    --msg-set-green:#00a359;
 }
 body{
     overflow-x: hidden;
 }
-section{
+.chat-container{
     height: 100vh;
     margin: 0;
     padding: 0 !important;
@@ -35,21 +38,21 @@ section{
 }
 .chat-info header, 
 .chat-box header,
-.input-box{
+.chat-box .input-box{
    background-color: var(--white);
 }
 .chat-info header,
 .chat-box header{
    height:8vh;
 }
-.chat-person{
+.chat-info .chat-person{
     height: 40vh;
     margin-top: auto;
     /* padding: 0 3rem; */
     padding: 0 4rem;
 
 }
-.pointer{
+.chat-person .person-box .pointer{
     background: var(--green);
     padding: 6px;
     border: none;
@@ -62,7 +65,7 @@ section{
     border-radius: 18px;
     height: 11vh;
 }
-.person-box p{
+.chat-box .person-box p{
     font-size: 16px;
     font-weight: 600;
 }
@@ -70,37 +73,120 @@ section{
     font-size: 11px;
     color: #7b7979;
 }
-.modal-1{
+/* <!-- Message-Settings-Trigger-Modal START--> */
+.massage-setting-modal .modal-dialog{
+    max-width: 600px;
+}
+.massage-setting-modal .modal-content{
+    padding: 0 3rem;
+    border-radius: 13px;
+    padding-bottom: 2rem;
+}
+.massage-setting-modal .modal-header{
+    border-bottom: 1px solid #000;
+}
+.massage-setting-modal .modal-header .btn-close{
+    transform: translate(167%,-88%);
+    font-size: 12px;
+    font-weight:bold;
+}
+.massage-setting-modal .modal-header > div{
+    padding: 2rem 0rem 12px 0rem;
+}
+.massage-setting-modal .modal-header .msg-set-img{
+    width: 5% !important;
+    margin-right: 12px;
+}
+.massage-setting-modal .modal-body{
+    border-bottom: none;
+}
+.massage-setting-modal .modal-body >div{
+    border-bottom: 1px solid #000;
+    padding: 12px 0;
+}
+.massage-setting-modal .modal-body > div:last-child{
+    border-bottom: none;
+}
+.massage-setting-modal .modal-body .msg-set-boxes{
+    padding-bottom: 1rem;
+}
+.massage-setting-modal .modal-body .msg-set-boxes p{
+   font-size: 18px;
+   font-weight: bold;
+}
+.massage-setting-modal .modal-body .msg-set-boxes span{
+    font-size: 14px;
+    font-weight: normal;
+}
+.massage-setting-modal .modal-body button{
+    padding:10px 6px !important;
+    border: none;
+    border-radius: 50px;
+    background: var(--msg-set-white);
+}
+.massage-setting-modal .modal-body .active-msg-set{
+    background: var(--msg-set-green);
+    width: 20%;
+    border-radius: 50px;
+    padding: 20px 20px;
+    margin-bottom: 0;
+}
+.massage-setting-modal .modal-body .msg-set-check-box{
+    background-color: var(--msg-set-white);
+    border: 2px solid #cbc6c6ab;
+    border-radius: 50%;
+    padding: 8px;
+    outline: none !important;
+}
+.massage-setting-modal .modal-body .msg-set-check-box:checked{
+    background-image:none;
+    outline: none !important;
+    padding: 2px;
+    background-color: var(--msg-set-pink);
+
+}
+/* <!-- Message-Settings-Trigger-Modal END--> */
+
+/* <!-- Settings-box-Modal 1 & 2 START--> */
+.setting-box-modal-1{
     width: 61%;
     height: 70%;
     margin-left:3rem;
 }
-.modal-2{
+.setting-box-modal-2{
     width: 61%;
     height: 70%;
     margin-top: 10rem;
     margin-left:3rem;
 }
-.modal-dialog{
+.setting-box-modal-1 .modal-dialog,
+.setting-box-modal-2 .modal-dialog{
  max-width: 300px;
 }
-.modal-content{
+.setting-box-modal-1 .modal-content,
+.setting-box-modal-2 .modal-content{
     border-radius: 18px;
 }
-.modal-body div{
-    padding: 4px 0 6px 0;
+.setting-box-modal-1 .modal-body div,
+.setting-box-modal-2 .modal-body div{
+    padding: 8px 0 6px 0;
     border-radius: 12px;
     color: var(--msg);
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.modal-body div:hover{
+.setting-box-modal-1 .modal-body div:hover,
+.setting-box-modal-2 .modal-body div:hover{
     background:var(--msg-hover) ;
 }
-.modal-body div button:hover{
+.setting-box-modal-1 .modal-body div button:hover,
+.setting-box-modal-2 .modal-body div button:hover{
     background-color: transparent !important;
 }
+/* <!-- Settings-box-Modal 1 & 2  END--> */
+
+/* <!-- Switch-Modal STRAT--> */
 .switch-modal{
     top: 17%;
     left: 0%;
@@ -122,6 +208,10 @@ section{
 .switch-modal .modal-footer a{
     color: var(--balck);
 }
+.switch-modal .modal-dialog {
+    max-width: 500px;
+    margin: 3.75rem auto;
+}
 
 .img-div{
     width: 100%;
@@ -142,6 +232,8 @@ section{
     height: 20% !important;
     background: white;
 }
+/* <!-- Switch-Modal END--> */
+
 .person-box img,
 .chat-box header img{
     /* max-width: 8.5%; */
@@ -273,7 +365,7 @@ input[type="submit"]{
     .chat-box header img:first-child {
         /* max-width: 11%; */
     }
-    .modal-1,.modal-2{
+    .setting-box-modal-1,.setting-box-modal-2{
         margin-left: 7rem;
     }
 }
