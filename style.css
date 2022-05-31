@@ -111,26 +111,33 @@ body{
     padding-bottom: 0rem;
 }
 .massage-setting-modal .modal-body .msg-set-boxes p{
-   font-size: 17px;
+    text-align: left;
+   font-size: 16px;
    font-weight: bold;
+   margin-left: 12px;
 }
 .massage-setting-modal .modal-body .msg-set-boxes span{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
 }
-.massage-setting-modal .modal-body button{
+.massage-setting-modal .modal-body .msg-set-boxes .btn{
     /* padding:10px 6px !important; */
-    padding: 10px 8px 14px 8px !important;
+    /* padding: 10px 8px 14px 8px !important; */
     border: none;
     border-radius: 50px;
     background: var(--msg-set-white);
+    color: #585857a2;
 }
-.massage-setting-modal .modal-body .active-msg-set{
+.massage-setting-modal .modal-body .msg-set-boxes .btn:hover{
+    background: var(--msg-set-white) !important;
+}
+.massage-setting-modal .modal-body .msg-set-boxes .active-msg-set{
     background: var(--msg-set-green);
     width: 20%;
     border-radius: 50px;
-    padding: 20px 20px;
+    padding: 22px;
     margin-bottom: 0;
+    margin-right:7px;
 }
 .massage-setting-modal .modal-body .msg-set-check-box{
     background-color: var(--msg-set-white);
